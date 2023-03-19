@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_flutter_balta/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,23 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("Hello World"),
-      ),
+      home: const LoginPage(),
     );
   }
 }
